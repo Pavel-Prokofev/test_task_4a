@@ -1,0 +1,72 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Bebas Neue Cyrillic';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('BebasNeueCyrillic'),
+    local('Bebas Neue Cyrillic'),
+    url('./BebasNeueCyrillic.woff2') format('woff2'),
+    url('./BebasNeueCyrillic.woff') format('woff'),
+    url('./BebasNeueCyrillic.ttf') format('ttf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('PTRootUI-Regular'),
+    local('PT Root UI Regular'),
+    url('./PTRootUI-Regular.woff2') format('woff2'),
+    url('./PTRootUI-Regular.woff') format('woff'),
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('PTRootUI-Medium'),
+    local('PT Root UI Medium'),
+    url('./PTRootUI-Medium.woff2') format('woff2'),
+    url('./PTRootUI-Medium.woff') format('woff'),
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PT Root UI';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('PTRootUI-Bold'),
+    local('PT Root UI Bold'),
+    url('./PTRootUI-Bold.woff2') format('woff2'),
+    url('./PTRootUI-Bold.woff') format('woff'),
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Rubik-Medium'),
+    local('Rubik Medium'),
+    url('./Rubik-Medium.woff2') format('woff2'),
+    url('./Rubik-Medium.woff') format('woff'),
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Rubik-Bold'),
+    local('Rubik Bold'),
+    url('./Rubik-Bold.woff2') format('woff2'),
+    url('./Rubik-Bold.woff') format('woff'),
+}

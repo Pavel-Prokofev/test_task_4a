@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Тестовое задание для 4А.Консалтинг">
+  <meta name="color-scheme" content="light dark" />
+
+  <title>test task 4A</title>
+
+  <link rel="icon" href="<%=require('./images/icon/icon.ico')%>" sizes="any"> <!-- 32x32 -->
+  <link rel="icon" href="<%=require('./images/icon/icon.svg')%>" type="image/svg+xml"> <!-- 256x256 -->
+  <link rel="apple-touch-icon" href="<%=require('./images/icon/apple-touch-icon.png')%>"> <!-- 512x512 -->
+
+  <meta property="og:title" content="Тестовое задание для 4А.Консалтинг">
+  <meta property="og:url" content="/">
+  <!-- ссылка на ресурс для OG -->
+  <meta property="og:image" content="<%=require('./images/basic-picture.png')%>">
+  <!-- базовая картинка для OG -->
+  <meta property="twitter:card" content="summary_large_image">
+
+</head>
+
+<body class="body">
+  <header class="header" aria-label="скидка">
+    <p class="">Скидка действует:</p>
+    <ul class="counter">
+      <li class="counter__field">
+        <span class="counter__value">00</span>
+        <span class="counter__title">min</span>
+      </li>
+      <li class="counter__field">
+        <span class="counter__value">00</span>
+        <span class="counter__title">sec</span>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <h1 class="basic-title">Выберите подходящий тарифный план</h1>
+    <section>
+      <img class="basic-img" src="<%=require('./images/basic-picture.png')%>" alt="Мужчина в хорошей физической форме">
+      <form class="tariffs">
+
+        <ul class="tariffs__wrap">
+          <li class="tariffs__tariff">
+            <h2 class="tariffs__title">1 неделя</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant">699₽</span>
+              <span class="tariffs__price_irrelevant">999₽</span>
+            </div>
+            <p class="tariffs__slogan">Чтобы просто начать 👍🏻</p>
+            <input class="radio" type="radio" name="tariff" value="1week" id="1week">
+          </li>
+          <li class="tariffs__tariff">
+            <h2 class="tariffs__title">1 месяц</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant">999₽</span>
+              <span class="tariffs__price_irrelevant">1690₽</span>
+            </div>
+            <p class="tariffs__slogan">Привести тело впорядок 💪🏻</p>
+            <input class="radio" type="radio" name="tariff" value="1month" id="1month">
+          </li>
+          <li class="tariffs__tariff">
+            <h2 class="tariffs__title">3 месяца</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant">2990₽</span>
+              <span class="tariffs__price_irrelevant">5990₽</span>
+            </div>
+            <p class="tariffs__slogan">Изменить образ жизни 🔥</p>
+            <input class="radio" type="radio" name="tariff" value="3months" id="3months">
+          </li>
+          <li class="tariffs__tariff">
+            <h2 class="tariffs__title">Навсегда</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant">5990₽</span>
+              <span class="tariffs__price_irrelevant">18 990₽</span>
+            </div>
+            <p class="tariffs__slogan">Всегда быть в форме и поддерживать своё здоровье ⭐️</p>
+            <input class="radio" type="radio" name="tariff" value="forever" id="forever">
+          </li>
+        </ul>
+
+        <p>Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>
+        <label for=""><input type="checkbox">
+          <span>Я соглашаюсь с <a href="#">Правилами сервиса</a> и условиями <a href="#">Публичной оферты.</a>Публичной
+            оферты.</span>
+        </label>
+        <button type="submit">Купить</button>
+        <p>Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных средств по истечению
+          купленного периода. Дальнейшие списания по тарифам участвующим в акции осуществляются по полной стоимости
+          согласно оферте.</p>
+      </form>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

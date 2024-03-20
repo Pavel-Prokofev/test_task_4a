@@ -1,0 +1,20 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --primary-font: "PT Root UI";
+  --secondary-font: "Rubik";
+  --tertiary-font: "Bebas Neue Cyrillic";
+
+  --primary-background-color: #f5f7f7;
+  --secondary-background-color: #fff;
+  --tertiary-background-color: #01b9c60d;
+
+  --primary-color: #2d3242;
+  --secondary-color: #2f4353;
+  --tertiary-color: #fff;
+
+  --primary-accent-color: #fd4d35;
+  --secondary-accent-color: #01b9c5;
+  --tertiary-accent-color: #818798;
+  --quaternary-accent-color: #2d97f9;
+  --fivefold-accent-color: #ced1d8;
+}
