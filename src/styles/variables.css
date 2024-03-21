@@ -11,10 +11,15 @@
   --primary-color: #2d3242;
   --secondary-color: #2f4353;
   --tertiary-color: #fff;
+  --quaternary-color: #687078;
+  --fivefold-color: #95979f;
 
   --primary-accent-color: #fd4d35;
   --secondary-accent-color: #01b9c5;
   --tertiary-accent-color: #818798;
   --quaternary-accent-color: #2d97f9;
   --fivefold-accent-color: #ced1d8;
+
+  --border-color: #d3d6dd;
+  --accent-border-color: #01b9c5;
 }

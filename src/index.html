@@ -24,71 +24,101 @@
 
 <body class="body">
   <header class="header" aria-label="скидка">
-    <p class="">Скидка действует:</p>
+    <span class="header__slogan">Скидка действует:</span>
     <ul class="counter">
       <li class="counter__field">
         <span class="counter__value">00</span>
-        <span class="counter__title">min</span>
+        <span class="counter__title">минут</span>
+      </li>
+      <li class="counter__field">
+        <svg class="counter__separator" viewBox="0 0 5 15" xmlns="http://www.w3.org/2000/svg">
+          <use href="<%=require('./images/svg/separator.svg')%>#separator"></use>
+        </svg>
+        <span class="counter__title"></span>
       </li>
       <li class="counter__field">
         <span class="counter__value">00</span>
-        <span class="counter__title">sec</span>
+        <span class="counter__title">секунд</span>
       </li>
     </ul>
   </header>
 
-  <main>
+  <main class="main">
     <h1 class="basic-title">Выберите подходящий тарифный план</h1>
-    <section>
-      <img class="basic-img" src="<%=require('./images/basic-picture.png')%>" alt="Мужчина в хорошей физической форме">
+
+    <section class="content">
+      <div class="content__img-box">
+        <img class="content__img" src="<%=require('./images/basic-picture.png')%>"
+          alt="Мужчина в хорошей физической форме">
+      </div>
       <form class="tariffs">
 
         <ul class="tariffs__wrap">
+
           <li class="tariffs__tariff">
-            <h2 class="tariffs__title">1 неделя</h2>
-            <div class="tariffs__prices-box">
-              <span class="tariffs__price_relevant">699₽</span>
-              <span class="tariffs__price_irrelevant">999₽</span>
-            </div>
-            <p class="tariffs__slogan">Чтобы просто начать 👍🏻</p>
-            <input class="radio" type="radio" name="tariff" value="1week" id="1week">
+            <label class="tariffs__label" for="1week">
+              <h2 class="tariffs__title">1 неделя</h2>
+              <div class="tariffs__prices-box">
+                <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">699</span>₽</span>
+                <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">999</span>₽</span>
+              </div>
+              <p class="tariffs__slogan">Чтобы просто начать&nbsp;👍🏻</p>
+              <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="1week" id="1week" checked>
+              <span class="tariffs__discount">-30%</span>
+            </label>
           </li>
+
           <li class="tariffs__tariff">
-            <h2 class="tariffs__title">1 месяц</h2>
-            <div class="tariffs__prices-box">
-              <span class="tariffs__price_relevant">999₽</span>
-              <span class="tariffs__price_irrelevant">1690₽</span>
-            </div>
-            <p class="tariffs__slogan">Привести тело впорядок 💪🏻</p>
-            <input class="radio" type="radio" name="tariff" value="1month" id="1month">
+            <label class="tariffs__label" for="1month">
+              <h2 class="tariffs__title">1 месяц</h2>
+              <div class="tariffs__prices-box">
+                <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">999</span>₽</span>
+                <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">1690</span>₽</span>
+              </div>
+              <p class="tariffs__slogan">Привести тело впорядок&nbsp;💪🏻</p>
+              <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="1month" id="1month">
+              <span class="tariffs__discount">-40%</span>
+            </label>
           </li>
+
           <li class="tariffs__tariff">
-            <h2 class="tariffs__title">3 месяца</h2>
-            <div class="tariffs__prices-box">
-              <span class="tariffs__price_relevant">2990₽</span>
-              <span class="tariffs__price_irrelevant">5990₽</span>
-            </div>
-            <p class="tariffs__slogan">Изменить образ жизни 🔥</p>
-            <input class="radio" type="radio" name="tariff" value="3months" id="3months">
+            <label class="tariffs__label" for="3months">
+              <h2 class="tariffs__title">3 месяца</h2>
+              <div class="tariffs__prices-box">
+                <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">2990</span>₽</span>
+                <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">5990</span>₽</span>
+              </div>
+              <p class="tariffs__slogan">Изменить образ жизни&nbsp;🔥</p>
+              <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="3months" id="3months">
+              <span class="tariffs__discount">-50%</span>
+            </label>
           </li>
+
           <li class="tariffs__tariff">
-            <h2 class="tariffs__title">Навсегда</h2>
-            <div class="tariffs__prices-box">
-              <span class="tariffs__price_relevant">5990₽</span>
-              <span class="tariffs__price_irrelevant">18 990₽</span>
-            </div>
-            <p class="tariffs__slogan">Всегда быть в форме и поддерживать своё здоровье ⭐️</p>
-            <input class="radio" type="radio" name="tariff" value="forever" id="forever">
+            <label class="tariffs__label" for="forever">
+              <h2 class="tariffs__title">Навсегда</h2>
+              <div class="tariffs__prices-box">
+                <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">5990₽</span></span>
+                <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">18 990₽</span></span>
+              </div>
+              <p class="tariffs__slogan">Всегда быть в форме и поддерживать своё здоровье&nbsp;⭐️</p>
+              <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="forever" id="forever">
+              <span class="tariffs__discount">-70%</span>
+            </label>
           </li>
+
         </ul>
 
-        <p>Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>
-        <label for=""><input type="checkbox">
-          <span>Я соглашаюсь с <a href="#">Правилами сервиса</a> и условиями <a href="#">Публичной оферты.</a>Публичной
-            оферты.</span>
+        <p class="tariffs__guideline">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц
+        </p>
+        <label class="tariffs__consent" for="consent">
+          <input class="tariffs__consent-checkbox" type="checkbox" name="consent" id="consent">
+          <span class="tariffs__consent-text">Я соглашаюсь с <a class="tariffs__link" href="#">Правилами сервиса</a> и
+            условиями <a class="tariffs__link" href="#">Публичной оферты.</a></span>
         </label>
-        <button type="submit">Купить</button>
-        <p>Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных средств по истечению
+        <button class="submit-button" type="submit">Купить</button>
+        <p class="tariffs__warning">Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных
+          средств по истечению
           купленного периода. Дальнейшие списания по тарифам участвующим в акции осуществляются по полной стоимости
           согласно оферте.</p>
       </form>
