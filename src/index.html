@@ -120,6 +120,8 @@
             условиями <a class="tariffs__link" href="#">Публичной оферты.</a></span>
         </label>
         <button class="submit-button submit-button_primary" type="submit">Купить</button>
+        <button class="submit-button submit-button_primary" type="button"     onclick="window['dialog'].showModal()" 
+        aria-controls="dialog">Dialog</button>
         <!-- В макете для мобильной версии это предупреждегние пропадает, но я счёл это ошибкой дизайнера и решил проконсультироватоься с заказчиком =))-->
         <p class="tariffs__warning">Нажимая «Купить», Пользователь соглашается на автоматическое списание денежных
           средств по истечению
@@ -130,6 +132,62 @@
 
   </main>
 
+  <dialog class="dialog" id="dialog">
+    <span>горящее предложение</span>
+    <h2>Не упусти свой <span>последний&nbsp;шанс</span></h2>
+    <p>Мы знаем, как трудно начать.. <span>Поэтому!</span></p>
+    <p>Дарим скидку для <span>лёгкого старта</span>&nbsp;🏃‍♂️</p>
+    <span>Посмотри, что мы для тебя приготовили&nbsp;🔥</span>
+    <form class="tariffs">
+
+      <ul class="tariffs__wrap">
+
+        <li class="tariffs__tariff">
+          <label class="tariffs__label" for="1week">
+            <h2 class="tariffs__title">1 неделя</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">699</span>₽</span>
+              <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">999</span>₽</span>
+            </div>
+            <p class="tariffs__slogan">Чтобы просто начать&nbsp;👍🏻</p>
+            <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="1week" id="1week" checked>
+            <span class="tariffs__discount">-30%</span>
+          </label>
+        </li>
+
+        <li class="tariffs__tariff">
+          <label class="tariffs__label" for="1month">
+            <h2 class="tariffs__title">1 месяц</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">999</span>₽</span>
+              <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">1690</span>₽</span>
+            </div>
+            <p class="tariffs__slogan">Привести тело впорядок&nbsp;💪🏻</p>
+            <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="1month" id="1month">
+            <span class="tariffs__discount">-40%</span>
+          </label>
+        </li>
+
+        <li class="tariffs__tariff">
+          <label class="tariffs__label" for="3months">
+            <h2 class="tariffs__title">3 месяца</h2>
+            <div class="tariffs__prices-box">
+              <span class="tariffs__price_relevant"><span class="tariffs__value_relevant">2990</span>₽</span>
+              <span class="tariffs__price_irrelevant"><span class="tariffs__value_irrelevant">5990</span>₽</span>
+            </div>
+            <p class="tariffs__slogan">Изменить образ жизни&nbsp;🔥</p>
+            <input class="tariffs__radio visually-hidden" type="radio" name="tariff" value="3months" id="3months">
+            <span class="tariffs__discount">-50%</span>
+          </label>
+        </li>
+
+      </ul>
+
+      <button class="submit-button submit-button_primary" type="submit">Купить</button>
+
+    </form>
+
+  </dialog>
 </body>
 
 </html>
